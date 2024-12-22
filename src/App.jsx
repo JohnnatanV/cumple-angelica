@@ -1,12 +1,21 @@
-// import { useState } from 'react'
+import { useState } from "react";
 import Countdown from "./components/Countdown";
+import Present from "./components/Present";
 
 function App() {
-  // const [count, setCount] = useState(0)
+  const [isCountdownComplete, setIsCountdownComplet] = useState(false);
+
+  const handleCountdownComplete = () => {
+    setIsCountdownComplet(true);
+  };
 
   return (
     <div>
-      <Countdown />
+      {isCountdownComplete ? (
+        <Present />
+      ) : (
+        <Countdown onComplete={handleCountdownComplete} />
+      )}
     </div>
   );
 }
