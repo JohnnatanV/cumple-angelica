@@ -66,6 +66,35 @@
   align-items: center;
 
   .message {
+    background-color: #909090ab;
+    position: absolute;
     font-weight: 600;
+    padding: 0.3rem;
+    border-radius: 10px;
+  }
+
+  .collage {
+    width: 75%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 20px;
+    justify-items: center;
+
+    .photo {
+      max-width: 200px;
+      justify-self: center;
+      align-self: center;
+
+      img {
+        width: 100%;
+        height: auto;
+        display: block;
+        object-fit: cover;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+    }
   }
 }

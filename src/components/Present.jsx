@@ -1,24 +1,26 @@
 import { motion } from "motion/react";
+import Collage from "./Collage";
+
 const Present = () => {
   const message = "Feliz cumpleaños, Muñequita hermosa";
   return (
     <div className="present">
       <motion.h1
         className="kaushan-script-regular message"
-        initial={{ opacity: 0, sacle: 0, color: "#ffffff" }}
-        animate={{ opacity: 1, scale: 1.5, color: "#000" }}
-        transition={{ duration: 1.5 }}
+        initial={{ opacity: 0, scale: 0, color: "#ffffff" }}
+        animate={{ opacity: 1, scale: 1.5, color: "#222" }}
+        transition={{
+          duration: 1.5,
+          type: "spring",
+          visualDuration: 1,
+          bounce: 0.5,
+        }}
       >
         {message}
       </motion.h1>
       <div>
         <p>Espero que este collage te guste. 🎉</p>
-        <div className="collage">
-          {/* Aquí puedes incluir las imágenes */}
-          <img src="imagen1.jpg" alt="Foto 1" />
-          <img src="imagen2.jpg" alt="Foto 2" />
-          {/* Agrega más imágenes según necesites */}
-        </div>
+        <Collage />
       </div>
     </div>
   );
