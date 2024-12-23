@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Countdown from "./components/Countdown";
 import Present from "./components/Present";
+import AnimatedBackground from "./components/AnimatedBackground";
 
 function App() {
   const [isCountdownComplete, setIsCountdownComplet] = useState(false);
@@ -11,6 +12,7 @@ function App() {
 
   return (
     <div>
+      <AnimatedBackground />
       {isCountdownComplete ? (
         <Present />
       ) : (

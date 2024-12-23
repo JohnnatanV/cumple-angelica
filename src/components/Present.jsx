@@ -11,6 +11,7 @@ const Present = () => {
         animate={{ opacity: 1, scale: 1.5, color: "#222" }}
         transition={{
           duration: 1.5,
+          delay: 5,
           type: "spring",
           visualDuration: 1,
           bounce: 0.5,
