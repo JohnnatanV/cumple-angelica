@@ -20,7 +20,6 @@ const Present = () => {
         {message}
       </motion.h1>
       <div>
-        <p>Espero que este collage te guste. 🎉</p>
         <Collage />
       </div>
     </div>
