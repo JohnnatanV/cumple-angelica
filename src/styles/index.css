@@ -68,6 +68,7 @@
 
   .message {
     background-color: #90909077;
+    width: 47%;
     text-align: center;
     position: absolute;
     font-weight: 600;
